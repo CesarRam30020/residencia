@@ -1,13 +1,8 @@
-// import path from "path";
 import Vue from "vue";
 import Router from "vue-router";
 
-// const LoginView = () => import("@/components/login/login-view.vue");
-// const EntidadesView = () => import("@/components/entidades/entidadesMain.vue");
-// const UsuariosView = () => import("@/components/usuarios/Usuarios.vue");
-// const OficiosView = () => import("@/components/oficios/OficiosView.vue");
 const MainTemplate = () => import("@/components/globales/mainTemplate.vue");
-const Dos = () => import("@/components/dos/Dos.vue");
+const Administrativo = () => import("@/components/administrativo/main.vue");
 Vue.use(Router);
 
 const router = new Router({
@@ -22,10 +17,15 @@ const router = new Router({
       component: MainTemplate,
       children: [
         {
-          path: '/dos',
-          name: 'Dos',
-          component: Dos
-        }
+          path: '/administrativo',
+          name: 'Administrativo',
+          component: Administrativo,
+        },
+        // {
+        //   path: '/financiero',
+        //   name: 'Financiero',
+        //   component: Dos,
+        // }
       ]
     },
     {

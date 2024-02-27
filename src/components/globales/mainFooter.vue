@@ -1,15 +1,14 @@
 <template>
     <v-footer app color="primary">
         <v-spacer></v-spacer>
-        <span  class="overline">&copy; {{ new Date().getFullYear() }} FICG </span>
+        <span  class="overline">&copy; {{ new Date().getFullYear() }} César Ramírez </span>
     </v-footer>
 </template>
 
 <script>
 export default {
-   
-    data: () => ({
-        loading: false,
-    })
+    // data: () => ({
+    //     loading: false,
+    // })
 }
 </script>
