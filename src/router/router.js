@@ -1,52 +1,32 @@
-import Vue from "vue";
-import Router from "vue-router";
+import { createRouter, createWebHistory } from 'vue-router';
 
-const MainTemplate = () => import("@/components/globales/mainTemplate.vue");
-const Administrativo = () => import("@/components/administrativo/main.vue");
-Vue.use(Router);
+const Main = () => import('@/components/main/holaMundo.vue');
 
-const router = new Router({
-  mode: "history",
-  linkActiveClass: "open active",
-  scrollBehavior: () => ({ y: 0 }),
+const router = createRouter({
+  history: createWebHistory(),
   routes: [
-    { path: '/', redirect: '/main'},
-    { 
-      path: '/main',
-      name: 'MainTemplate', 
-      component: MainTemplate,
-      children: [
-        {
-          path: '/administrativo',
-          name: 'Administrativo',
-          component: Administrativo,
-        },
-        // {
-        //   path: '/financiero',
-        //   name: 'Financiero',
-        //   component: Dos,
-        // }
-      ]
+    {
+      path: '/',
+      redirect: '/main'
     },
     {
-      path: '*',
-      redirect: '/',
-  }
-  ],
+      path: '/main',
+      name: 'Main',
+      component: Main,
+      // redirect: '/main/ures/0',
+      // children: [
+      //   // {
+      //   //   path: 'ures/:numero',
+      //   //   name: 'URES',
+      //   //   component: uresView
+      //   // },
+      // ]
+    },
+    // {
+    //   path: '*',
+    //   redirect: '/main',
+    // }
+  ]
 });
-
-const originalPush = Router.prototype.push;
-Router.prototype.push = function push(location) {
-  return originalPush.call(this, location).catch(err => {
-    if (
-      err.name === "NavigationDuplicated" &&
-      err.message.includes("Avoided redundant navigation")
-    ) {
-      console.log("Navegación duplicada evitada:", err.message);
-    } else {
-      throw err;
-    }
-  });
-};
 
 export default router;
