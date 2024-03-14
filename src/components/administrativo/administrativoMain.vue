@@ -17,19 +17,9 @@
 					</v-col>
 				</v-row>
 
-				<!-- <v-tabs background-color="primary">
-          <v-col v-for="(tab, index) in tabs" :key="index" md="2">
-            <div class="v-tab-wrapper">
-              <v-tab>{{ tab.title }}</v-tab>
-            </div>
-          </v-col>
-        </v-tabs> -->
-
         <div>
           <v-card>
             <v-tabs v-model="tab" centered background-color="primary" dark slider-color="yellow">
-              <!-- <v-tab to="#tab-1">Entrantes</v-tab>
-              <v-tab to="#tab-2">Generados</v-tab> -->
               <v-tab
                 v-for="(tab, index) in tabs"
                 :key="index"
@@ -40,10 +30,7 @@
               
               <v-tabs-items v-model="tab">
                 <v-tab-item value="tab-1">
-                  <v-card flat>
-                    <h1>tab</h1>
-                    <permisos-lisencias />
-                  </v-card>
+                  <permisos-lisencias-vue />
                 </v-tab-item>
                 <v-tab-item value="tab-2">
                   <v-card flat>
@@ -71,11 +58,13 @@
 </template>
 
 <script>
-import permisosLisenciasVue from './permisosLisencias.vue'
+import permisosLisenciasVue from './permisosLisencias/permisosLisencias.vue'
 
 export default {
 	name: 'administrativoMain',
-  components: [ permisosLisenciasVue ],
+  components: {
+    permisosLisenciasVue
+  },
 	data: () => ({
 		tabs: [
 			{ title: 'PERMISOS Y LICENCIAS', route: '#tab-1' },
