@@ -1,6 +1,5 @@
 <template>
   <v-container>
-    
     <v-card class="pa-5">
       <v-row no-gutters align="center" justify="center">
         <v-col> <h1 class="text-center"> PERMISOS Y LICENCIAS </h1> </v-col>
@@ -23,8 +22,6 @@
             También conocida como carta de anuencia vecinal es el tramite y/o permiso para corroborar que los vecinos cercanos no tengan algún inconveniente o molestia con el establecimiento. El tiempo del tramite depende de la zona en que se quiera llevar a cabo el negocio. 
             <br><br>
             Si el lugar deseado para el establecimiento se encuentra dentro de un edificio que ya este asignado para el tipo de establecimiento que se quiere realizar, no es necesario hacer este tramite.
-            <br><br>
-            <v-btn href="#" target="_blank" color="secondary">Aqui</v-btn>
           </p>
         </v-col>
       </v-row>
