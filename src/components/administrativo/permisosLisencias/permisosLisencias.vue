@@ -17,6 +17,12 @@
 import cartaColonosVue from './cartaColonos.vue';
 import pnlResumenVue from './pnlResumen.vue';
 import usoSueloVue from './usoSuelo.vue';
+import declaracionAperturaVue from './declaracionApertura.vue';
+import licenciasGiroVue from './licenciasGiro.vue';
+import licFuncionamientoVue from './licFuncionamiento.vue';
+import licFuncionamientoNoAlcoholVue from './licFuncionamientoNoAlcohol.vue'
+import licFuncionamientoAlcoholVue from './licFuncionamientoAlcohol.vue';
+import permisoAnuncioExteriorVue from './permisoAnuncioExterior.vue';
 
 export default {
   name: 'permisosLisencias',
@@ -24,6 +30,12 @@ export default {
     pnlResumenVue,
     cartaColonosVue,
     usoSueloVue,
+    declaracionAperturaVue,
+    licenciasGiroVue,
+    licFuncionamientoVue,
+    licFuncionamientoNoAlcoholVue,
+    licFuncionamientoAlcoholVue,
+    permisoAnuncioExteriorVue,
   },
   data() {
     return {
@@ -31,7 +43,12 @@ export default {
         { component: pnlResumenVue },
         { component: cartaColonosVue },
         { component: usoSueloVue },
-        // { component:  },
+        { component: declaracionAperturaVue },
+        { component: licenciasGiroVue },
+        { component: licFuncionamientoVue },
+        { component: licFuncionamientoNoAlcoholVue },
+        { component: licFuncionamientoAlcoholVue },
+        { component: permisoAnuncioExteriorVue }
       ],
       page: 0,
     };

@@ -7,7 +7,7 @@
     </v-row>
     <v-row no-gutters align="center" justify="center" class="mb-5">
       <v-col>
-        <p>
+        <p class="text-justify">
           En el caso de requerir el permiso de uso de suelo para utilizar un espacio para servicios industriales o en este caso comercial.
           <br /><br />
           La duración de la licencia tiene una vigencia de dos años con la opción a prorrogarse por un periodo igual, previa solicitud del interesado deberá presentarse cuando menos cinco días hábiles anteriores a la fecha de vencimiento. El tiempo del trámite por lo general tarda alrededor de cinco días hábiles.
