@@ -2,11 +2,12 @@
   <v-app style="background-color: #eceff1">
     <v-app-bar color="primary" app dark>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <h1>Residencia</h1>
       <!-- <v-toolbar-title class="headline text-uppercase">
           Sistema de registro de estaciones — {{userName}}
       </v-toolbar-title> -->
       <v-spacer></v-spacer>
-      <v-btn icon @click="cerrarSesion()"> <v-icon>mdi-power</v-icon></v-btn>
+      <!-- <v-btn icon @click="cerrarSesion()"> <v-icon>mdi-power</v-icon></v-btn> -->
       <!-- <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn small icon outlined v-bind="attrs" v-on="on">
