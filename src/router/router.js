@@ -2,12 +2,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-// const LoginView = () => import("@/components/login/login-view.vue");
-// const EntidadesView = () => import("@/components/entidades/entidadesMain.vue");
-// const UsuariosView = () => import("@/components/usuarios/Usuarios.vue");
-// const OficiosView = () => import("@/components/oficios/OficiosView.vue");
 const MainTemplate = () => import("@/components/globales/mainTemplate.vue");
 const AdministrativoMain = () => import("@/components/administrativo/administrativoMain.vue");
+
 Vue.use(Router);
 
 const router = new Router({
@@ -25,7 +22,17 @@ const router = new Router({
           path: '/administrativo',
           name: 'Administrativo',
           component: AdministrativoMain
-        }
+        },
+        {
+          path: '/financiero',
+          name: 'Financiero',
+          redirect: '/'
+        },
+        {
+          path: '/operativo',
+          name: 'Operativo',
+          redirect: '/'
+        },
       ]
     },
     {

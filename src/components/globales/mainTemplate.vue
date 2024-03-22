@@ -64,26 +64,6 @@ export default {
     ...mapGetters(["httpURL","sessionToken", "userName"]),
   },
   async created() {
-    // try{
-    //   if (sessionStorage.getItem("token")) this.$store.dispatch("setSessionToken", sessionStorage.getItem("token"));
-      
-    //   if (localStorage.getItem("token")) this.$store.dispatch("setSessionToken", localStorage.getItem("token"));
-    
-    //   if (!this.sessionToken) this.$router.push("/login");
-    //   const serverResponse = await getSession()
-    //   console.log(serverResponse);
-    //   this.$store.dispatch("setUserName", serverResponse.nombre);
-    //   this.$store.dispatch("setRole", serverResponse.role);
-    //   // this.$store.dispatch("setUserId", serverResponse.id);
-    //   this.$store.dispatch("setCodigoUsuario", serverResponse.codigo);
-    //   this.menu = this.menu.concat(serverResponse.menu);
-    //   this.userId = serverResponse._id;
-    // }
-    // catch(error) {
-    //   localStorage.removeItem("token");
-    //   sessionStorage.removeItem("token");
-    //   if(error.response)this.$router.push('/login');
-    // }
   },
   data: () => ({
     drawer: false,
@@ -93,8 +73,8 @@ export default {
     menu: [
       { title: 'Inicio', route: '/main' },
       { title: 'Administrativo', route: '/administrativo' },
-      { title: 'Financiero' },
-      { title: 'Operativo' },
+      { title: 'Financiero', route: '/financiero' },
+      { title: 'Operativo', route: '/operativo' },
     ],
   }),
   methods: {
