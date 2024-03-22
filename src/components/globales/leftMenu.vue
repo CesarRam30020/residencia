@@ -14,7 +14,7 @@
         <v-list-item-title>{{ item.title }}</v-list-item-title>
         
          <v-list v-for="(item,index) in item.children" :key="index" link @click="redirect(item.route)"> 
-          <v-list-item-title>{{ item.title }}</v-list-item-title></v-list>
+          <v-list-item-title>{{ item.title }} </v-list-item-title></v-list>
       </v-list-item-content>
     </v-list-item>
   </v-list>

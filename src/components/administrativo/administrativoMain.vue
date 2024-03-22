@@ -13,7 +13,7 @@
 
 				<v-row no-gutters>
 					<v-col cols="12" md="6">
-						<!-- <p>Resumen</p> -->
+						<p>Resumen</p>
 					</v-col>
 				</v-row>
 
@@ -34,17 +34,17 @@
                 </v-tab-item>
                 <v-tab-item value="tab-2">
                   <v-card flat>
-                    <h1>No Info</h1>
+                    <h1>TAB2</h1>
                   </v-card>
                 </v-tab-item>
                 <v-tab-item value="tab-3">
                   <v-card flat>
-                    <h1>No Info</h1>
+                    <h1>TAB3</h1>
                   </v-card>
                 </v-tab-item>
                 <v-tab-item value="tab-4">
                   <v-card flat>
-                    <h1>No Info</h1>
+                    <h1>TAB4</h1>
                   </v-card>
                 </v-tab-item>
               </v-tabs-items>
