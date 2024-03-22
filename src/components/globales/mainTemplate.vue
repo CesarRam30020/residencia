@@ -93,8 +93,8 @@ export default {
     menu: [
       { title: 'Inicio', route: '/main' },
       { title: 'Administrativo', route: '/administrativo' },
-      { title: 'Financiero' },
-      { title: 'Operativo' },
+      { title: 'Financiero', route: '/financiero' },
+      { title: 'Operativo', route: '/operativo' },
     ],
   }),
   methods: {

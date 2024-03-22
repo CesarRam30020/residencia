@@ -25,7 +25,17 @@ const router = new Router({
           path: '/administrativo',
           name: 'Administrativo',
           component: AdministrativoMain
-        }
+        },
+        {
+          path: '/financiero',
+          name: 'Financiero',
+          redirect: '/'
+        },
+        {
+          path: '/operativo',
+          name: 'Operativo',
+          redirect: '/'
+        },
       ]
     },
     {
