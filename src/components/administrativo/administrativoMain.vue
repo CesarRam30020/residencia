@@ -34,17 +34,17 @@
                 </v-tab-item>
                 <v-tab-item value="tab-2">
                   <v-card flat>
-                    <h1>No info</h1>
+                    <traspasos-vue />
                   </v-card>
                 </v-tab-item>
                 <v-tab-item value="tab-3">
                   <v-card flat>
-                    <h1>No info</h1>
+                    <proteccion-civil-vue />
                   </v-card>
                 </v-tab-item>
                 <v-tab-item value="tab-4">
                   <v-card flat>
-                    <h1>No info</h1>
+                    <normas-leyes-iso-vue />
                   </v-card>
                 </v-tab-item>
               </v-tabs-items>
@@ -58,12 +58,18 @@
 </template>
 
 <script>
+import normasLeyesIsoVue from './normasLeyesIso/normasLeyesIso.vue'
 import permisosLisenciasVue from './permisosLisencias/permisosLisencias.vue'
+import proteccionCivilVue from './proteccionCivil/proteccionCivil.vue'
+import traspasosVue from './traspaso/traspasos.vue'
 
 export default {
 	name: 'administrativoMain',
   components: {
-    permisosLisenciasVue
+    permisosLisenciasVue,
+    traspasosVue,
+    proteccionCivilVue,
+    normasLeyesIsoVue,
   },
 	data: () => ({
 		tabs: [

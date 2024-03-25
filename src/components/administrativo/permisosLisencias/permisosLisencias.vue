@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-carousel hide-delimiter-background show-arrows ref="carousel" @change="handleCarouselChange">
+    <v-carousel hide-delimiter-background show-arrows-on-hover ref="carousel" @change="handleCarouselChange">
       <v-carousel-item v-for="(item, index) in items" :key="index">
         <v-row no-gutters align="center" justify="center" class="p-3">
           <v-col>
@@ -26,17 +26,6 @@ import permisoAnuncioExteriorVue from './permisoAnuncioExterior.vue';
 
 export default {
   name: 'permisosLisencias',
-  components: {
-    pnlResumenVue,
-    cartaColonosVue,
-    usoSueloVue,
-    declaracionAperturaVue,
-    licenciasGiroVue,
-    licFuncionamientoVue,
-    licFuncionamientoNoAlcoholVue,
-    licFuncionamientoAlcoholVue,
-    permisoAnuncioExteriorVue,
-  },
   data() {
     return {
       items: [
